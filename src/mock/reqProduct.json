@@ -1,0 +1,32 @@
+[
+    {
+        "id":0,
+        "name":"Iphone 14 Pro Max",
+        "image":"../../src/assets/image/IP_14_Pro.png",
+        "spec":{
+            "ram":"8 GB",
+            "storage":"128 GB / 256 GB / 512 GB / 1 TB",
+            "kamera": "48 MP"
+        }
+    },
+    {
+        "id":1,
+        "name":"Iphone 13 Pro Max",
+        "image":"../../src/assets/image/IP_13_Pro.png",
+        "spec":{
+            "ram":"8 GB",
+            "storage":"128 GB / 256 GB / 512 GB / 1 TB",
+            "kamera": "48 MP"
+        }
+    },
+    {
+        "id":2,
+        "name":"Iphone 12 Pro Max",
+        "image":"../../src/assets/image/IP_12_Pro.png",
+        "spec":{
+            "ram":"8 GB",
+            "storage":"128 GB / 256 GB / 512 GB / 1 TB",
+            "kamera": "48 MP"
+        }
+    }
+]
