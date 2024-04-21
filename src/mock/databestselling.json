@@ -1,0 +1,38 @@
+[
+    {
+        "name":"iphone 14 pro Max",
+        "price":1000000,
+        "image":"../../../../src/assets/image/IP_13_Pro.png",
+        "rating":2.4
+    },
+    {
+        "name":"iphone 10 pro Max",
+        "price":3000000,
+        "image":"../../../../src/assets/image/IP_14_Pro.png",
+        "rating":3
+    },
+    {
+        "name":"iphone 12 pro Max",
+        "price":89000000,
+        "image":"../../../../src/assets/image/IP_13_Pro.png",
+        "rating":5
+    },
+    {
+        "name":"iphone 15 pro Max",
+        "price":11000000,
+        "image":"../../../../src/assets/image/IP_12_Pro.png",
+        "rating":4.4
+    },
+    {
+        "name":"iphone 25 pro Max",
+        "price":8000000,
+        "image":"../../../../src/assets/image/IP_13_Pro.png",
+        "rating":4.9
+    },
+    {
+        "name":"iphone 16 pro Max",
+        "price":5000000,
+        "image":"../../../../src/assets/image/IP_14_Pro.png",
+        "rating":5
+    }
+]

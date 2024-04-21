@@ -5,6 +5,9 @@ import { Ireq } from '../../../type'
 import { Box,  Image, Text } from '@chakra-ui/react'
 import { Category } from './Category'
 import { BestSelling } from './BestSelling'
+import { NewAririval } from './NewAririval'
+import { Superiority } from './Superiority'
+import { Footer } from './Footer'
 export const Home = () => {
   const [ data, setData ] = useState<Ireq>()
   const [ currentIndex, setCurrentIndex ] = useState(0)
@@ -25,7 +28,7 @@ export const Home = () => {
   return (
     <>
         <Navbar/>
-        <Box display={'grid'}  h={'100%'} justifyItems={'center'}>
+        <Box display={'grid'}  justifyItems={'center'} gap={'10px'}>
           <Box display={'flex'} bgImage={'../../../../src/assets/image/BGCARD.jpeg'} w={'85%'} rounded={'10px'} m={'20px'}  justifyContent={'space-between'}>
             <Box justifyItems={'center'} p={'100px'} color={'white'}>
               <Text fontSize={'35px'} fontWeight={'bold'}>{data?.name}</Text><br></br>
@@ -43,8 +46,21 @@ export const Home = () => {
             <Category/>
           </Box>
 
-          <Box w={'85%'}>
+          <Box w={'85%'} my={'20px'}>
             <BestSelling/>
+          </Box>
+
+          <Box w={'85%'} minH={'600px'} my={'10px'} >
+          <Text fontWeight={'bold'} fontSize={'20px'}>New Arrival</Text>
+            <NewAririval/>
+          </Box>
+
+          <Box w={'85%'} my={'70px'} >
+            <Superiority/>
+          </Box>
+
+          <Box w={'100%'} minH={'250px'} bg={'black'}>
+            <Footer/>
           </Box>
         </Box>
     </>
