@@ -7,6 +7,15 @@ interface Iprop {
 
 export const CardBestSelling = ({data}:Iprop) => {
 
+  const formatToRupiah = (value: number): string => {
+    const formatter = new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+      minimumFractionDigits: 0,
+    });
+    return formatter.format(value);
+  };
+
   return (
     <Box shadow={'none'} w={'20%'} p={'10px'} >
         <Box display={'flex'} justifyContent={'center'} bg={'#F5F5F5'} mb={'10px'} p={'20px'}>
@@ -14,7 +23,7 @@ export const CardBestSelling = ({data}:Iprop) => {
         </Box>
         <Box>
             <Text>{data.name}</Text>
-            <Text color={'#DB4444'}>Rp. {data.price}</Text>
+            <Text color={'#DB4444'}>{formatToRupiah(data.price)}</Text>
             <RatingProduck rating={data.rating}/>
         </Box>
     </Box>

@@ -13,7 +13,9 @@ export const Navbar = () => {
                     
             </Box>
             <Box display={'flex'} w={'60%'} gap={'25px'} justifyContent={'center'} alignItems={'center'} >
-                <Text>Home</Text>
+                <Link to={'/'}>
+                    <Text>Home</Text>
+                </Link>
                 <Text>Contact</Text>
                 <Text>About</Text>
                 <InputGroup bg={'white'} w={'50%'}>
