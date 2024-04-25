@@ -61,6 +61,14 @@ export const FormLogin = () => {
 
                 </Box>
 
+                <Box w={'100%'} display={'flex'} justifyContent={'center'} gap={'8px'} mt={'-20px'}>
+
+                    <Text>Dont have a account ?</Text>
+                    <Link to={'/register'}>
+                        <Text textDecoration={'underline'}>Register</Text>
+                    </Link>
+     
+                </Box>
 
             </Box>
         </Box>

@@ -1,11 +1,11 @@
-import { Navbar } from '../../../component/Navbar'
+import { Navbar } from '../../component/Navbar'
 import { Box, Text } from '@chakra-ui/react'
-import { Category } from './Category'
-import { BestSelling } from './BestSelling'
-import { NewAririval } from './NewAririval'
-import { Superiority } from './Superiority'
-import { Footer } from './Footer'
-import { Promo } from './Promo'
+import { Category } from './component/Category'
+import { BestSelling } from './component/BestSelling'
+import { NewAririval } from './component/NewAririval'
+import { Superiority } from './component/Superiority'
+import { Footer } from './component/Footer'
+import { Promo } from './component/Promo'
 export const Home = () => {
 
   return (

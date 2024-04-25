@@ -1,8 +1,8 @@
 import React from 'react'
-import { Navbar } from '../../../component/Navbar'
-import { Footer } from '../../Home/component/Footer'
+import { Navbar } from '../../component/Navbar'
+import { Footer } from '../Home/component/Footer'
 import { Box } from '@chakra-ui/react'
-import { FormLogin } from './FormLogin'
+import { FormLogin } from './component/FormLogin'
 
 export const Login = () => {
   return (

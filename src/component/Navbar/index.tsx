@@ -18,6 +18,7 @@ export const Navbar = () => {
                         <Image src="../../../src/assets/image/logo-e-comers.png" />
                     </Link>
                 </Box>
+
                 <Box display={"flex"} w={"60%"} gap={"25px"} justifyContent={"center"} alignItems={"center"}>
                     <Link to={"/"}>
                         <Text>Home</Text>
@@ -33,8 +34,8 @@ export const Navbar = () => {
                 </Box>
                 <Box display={"center"} w={"20%"} justifyContent={"center"} alignItems={"center"} gap={5}>
                     <FaShoppingCart size={30} />
-                    <Link to={"/register"}>
-                        <Text>Register</Text>
+                    <Link to={"/login"}>
+                        <Text>Login</Text>
                     </Link>
                 </Box>
             </Box>
