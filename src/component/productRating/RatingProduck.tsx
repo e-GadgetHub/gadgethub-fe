@@ -23,10 +23,11 @@ export const RatingProduck = ({ rating }: IR) => {
   for (let i = 0; i < emptyStars; i++) {
     starsArray.push(<Icon as={FaStar} key={`empty${i}`} color="gray.400" />);
   }
+  
   return (
     <Flex alignItems="center">
-    <Box>{starsArray}</Box>
-    <Box ml={2}>{rating.toFixed(1)}</Box>
+      <Box>{starsArray}</Box>
+      <Box ml={2}>{rating.toFixed(1)}</Box>
   </Flex>
   )
 }

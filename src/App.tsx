@@ -1,9 +1,10 @@
 
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import { Register } from './features/register/component/Register'
-import { Login } from './features/login/component/Login'
-import { Home } from './features/Home/component/Home'
+import { Home } from './pages/Home/Home'
+import { Login } from './pages/login/Login'
+import { Register } from './pages/register/Register'
+
 
 function App() {
   

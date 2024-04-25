@@ -28,7 +28,7 @@ export const Navbar = () => {
             </Box>
             <Box display={'center'} w={'20%'} justifyContent={'center'} alignItems={'center'} gap={5}>
                 <FaShoppingCart size={30} />
-                <Link to={'/register'}>
+                <Link to={'/login'}>
                 <Text>Login</Text>
                 </Link>
             </Box>

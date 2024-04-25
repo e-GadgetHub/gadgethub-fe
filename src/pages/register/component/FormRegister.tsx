@@ -65,7 +65,6 @@ export const FormRegister = () => {
                 <Box my={'45px'} display={'grid' } gap={'10px'}>
 
                     <Button w={'100%'} color={'white'} bg={'#DB4444'} _hover={'none'}>Create Account</Button>
-
                     <Link to={''}>
                         <Box w={'100%'} border={'1px'} borderColor='gray.200' display={'flex'} justifyContent={'center'} alignItems={'center'} p={'8px'} gap={'10px'}>
                             <Image src='../../../../src/assets/image/googleicon.png' w={'8%'}/>
@@ -73,7 +72,8 @@ export const FormRegister = () => {
                         </Box>
                     </Link>
 
-                    <Box display={'flex'} width={'100%'} justifyContent={'center'} gap={'20px'}>
+                    
+                    <Box display={'flex'} width={'100%'} justifyContent={'center'} gap={'8px'}>
                         <Text>Already have Account?</Text>
                         <Link to={'/login'}>
                             <Text textDecor={'underline'}>Login</Text>
