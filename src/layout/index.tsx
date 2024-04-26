@@ -7,6 +7,7 @@ import { Box } from "@chakra-ui/react";
 const Component: React.FC = () => {
     return (
         <>
+        
             <Navbar />
 
             <Outlet />
