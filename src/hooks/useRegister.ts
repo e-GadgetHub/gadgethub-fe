@@ -1,10 +1,7 @@
 import API from "../libs/api";
+import { IRegister } from "../type";
 
-export interface IRegister {
-    username: string;
-    email: string;
-    password: string;
-}
+
 
 export default function useRegister() {
     async function register(data: IRegister) {
