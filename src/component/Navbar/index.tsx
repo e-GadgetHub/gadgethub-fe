@@ -10,12 +10,15 @@ export const Navbar = () => {
             justifyContent={"center"}
             alignItems={"center"}
             borderBottom={"1px solid"}
-            bg={"transparent"}
+            bg={'white'}
+            position={'fixed'}
+            w={'100%'}
+            zIndex={1}
         >
-            <Box w={"90%"} display={"flex"} justifyContent={"space-between"}>
-                <Box w={"20%"}>
+            <Box w={"90%"} display={"flex"} justifyContent={"space-between"}  h={'100%'}>
+                <Box w={"20%"} bg={'red'}>
                     <Link to={"/"}>
-                        <Image src="../../../src/assets/image/logo-e-comers.png" />
+                        <Image w={'100%'} h={'100%'} src="../../../src/assets/image/logo-e-comers.png" />
                     </Link>
                 </Box>
 
