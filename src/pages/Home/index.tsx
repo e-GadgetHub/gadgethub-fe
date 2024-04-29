@@ -15,9 +15,7 @@ const Component: React.FC = () => {
       gap={"10px"}
     >
       
-
         <Promo />
-      
 
       <Box
         display={"flex"}

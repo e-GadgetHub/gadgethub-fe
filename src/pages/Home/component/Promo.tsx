@@ -26,6 +26,7 @@ export const Promo = () => {
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
     >
+      
       {data.map((item, index) => (
         <SwiperSlide key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
           <Box
@@ -34,12 +35,12 @@ export const Promo = () => {
             backgroundSize={"cover"}
             w={"85%"}
             rounded={"10px"}
-            m={"20px"}
+            m={"20px"}  
             justifyContent={"space-between"}
             alignItems={"center"}
             textAlign={"center"}
           >
-            <Box justifyItems={"center"} p={"100px"} color={"white"}>
+            <Box textAlign={'start'} p={"100px"} color={"white"}>
               <Text fontSize={"35px"} fontWeight={"bold"}>
                 {item?.name}
               </Text>
