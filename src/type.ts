@@ -26,3 +26,13 @@ export interface IRegister {
     email:string,
     password:string
 }
+
+export interface ICheckout {
+    firstName:string,
+    province:string,
+    city:string,
+    district:string,
+    address:string,
+    phoneNumber:string,
+    email:string,
+}

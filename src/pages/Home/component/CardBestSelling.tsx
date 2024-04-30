@@ -1,20 +1,14 @@
 import { Box,  Image, Text } from '@chakra-ui/react'
 import { RatingProduck } from '../../../component/productRating/RatingProduck'
 import { IBestSell } from '../../../type'
+import { ConvertNumber } from '../../../utils/ConvertNumber'
 interface Iprop {
   data: IBestSell
 }
 
 export const CardBestSelling = ({data}:Iprop) => {
 
-  const formatToRupiah = (value: number): string => {
-    const formatter = new Intl.NumberFormat('id-ID', {
-      style: 'currency',
-      currency: 'IDR',
-      minimumFractionDigits: 0,
-    });
-    return formatter.format(value);
-  };
+  const { formatToRupiah } = ConvertNumber()
 
   return (
     <Box shadow={'none'} w={'20%'} p={'10px'} >
