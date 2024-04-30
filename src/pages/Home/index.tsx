@@ -1,5 +1,4 @@
 import { Box, Text } from "@chakra-ui/react";
-import { Category } from "./component/Category";
 import { BestSelling } from "./component/BestSelling";
 import { NewAririval } from "./component/NewAririval";
 import { Superiority } from "./component/Superiority";
@@ -16,15 +15,6 @@ const Component: React.FC = () => {
     >
       
         <Promo />
-
-      <Box
-        display={"flex"}
-        w={"100%"}
-        justifyContent={"center"}
-        borderY={"1px"}
-      >
-        <Category />
-      </Box>
 
       <Box w={"85%"} my={"20px"}>
         <BestSelling />

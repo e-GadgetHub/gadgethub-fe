@@ -14,14 +14,16 @@ import {
 import React from "react";
 import data from "../../mock/databestselling.json";
 import { InputQuantity } from "./Component/InputQuantity";
+import { useNavigate } from "react-router-dom";
 const Component: React.FC = () => {
+  const navigate = useNavigate();
   return (
-    <Box w={"100%"} display={"grid"} justifyItems={"center"} gap={"10px"} >
+    <Box w={"100%"} display={"grid"} justifyItems={"center"} gap={"10px"}>
       <Box
         display={"flex"}
         color={"#C1C0C1"}
         fontSize={"15px"}
-        gap={"5px"}
+        gap={"20px"}
         w={"80%"}
         my={"30px"}
       >
@@ -55,14 +57,16 @@ const Component: React.FC = () => {
         my={"30px"}
       >
         <Button
-          bg={"none"}
+          color={"white"}
+          bg={"#DB4444"}
           border={"1px"}
           _hover={{ bg: "black", color: "white" }}
         >
           Return to Shop
         </Button>
         <Button
-          bg={"none"}
+          color={"white"}
+          bg={"#DB4444"}
           border={"1px"}
           _hover={{ bg: "black", color: "white" }}
         >
@@ -75,12 +79,13 @@ const Component: React.FC = () => {
         display={"flex"}
         justifyContent={"space-between"}
         mt={"30px"}
-        mb={'70px'}
+        mb={"70px"}
       >
         <Flex gap={"10px"}>
-          <Input placeholder="Enter your coupon code" />
+          <Input placeholder="Enter your coupon code" border={'1px'}/>
           <Button
-            bg={"none"}
+            color={"white"}
+            bg={"#DB4444"}
             border={"1px"}
             _hover={{ bg: "black", color: "white" }}
           >
@@ -110,9 +115,11 @@ const Component: React.FC = () => {
           </Flex>
 
           <Button
-            bg={"none"}
+            color={"white"}
+            bg={"#DB4444"}
             border={"1px"}
             _hover={{ bg: "black", color: "white" }}
+            onClick={() => navigate("/checkout")}
           >
             Checkout
           </Button>

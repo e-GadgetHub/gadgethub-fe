@@ -1,7 +1,7 @@
 import { Box, Image, Input, InputGroup, InputRightElement, Text } from '@chakra-ui/react'
-import React from 'react'
 import { FaApple, FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { IoSend } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   return (
@@ -27,8 +27,8 @@ export const Footer = () => {
 
         <Box w={'20%'} display={'flex'} flexDir={'column'} gap={'15px'} >
             <Text fontSize={'xl'} >Account</Text>
-            <Text fontSize={'10px'}>Login / Register</Text>
-            <Text fontSize={'10px'}>Chart</Text>
+            <Text fontSize={'10px'}> <Link to={'/login'}>Login</Link> / <Link to={'/register'}>Register</Link> </Text>
+            <Text fontSize={'10px'}><Link to={'/cart'}>Cart</Link></Text>
             <Text fontSize={'10px'}>Wishlist</Text>
             <Text fontSize={'10px'}>Shop</Text>
         </Box>
