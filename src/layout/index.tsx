@@ -5,18 +5,19 @@ import { Outlet } from "react-router-dom";
 import { Box } from "@chakra-ui/react";
 
 const Component: React.FC = () => {
-    return (
-        <>
-        
-            <Navbar />
+  return (
+    <>
+      <Navbar />
 
-            <Outlet />
+      <Box px={"6rem"}>
+        <Outlet />
+      </Box>
 
-            <Box bg={"black"}>
-                <Footer />
-            </Box>
-        </>
-    );
+      <Box bg={"black"}>
+        <Footer />
+      </Box>
+    </>
+  );
 };
 
 const Layout = React.memo(Component);
