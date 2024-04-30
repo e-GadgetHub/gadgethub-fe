@@ -4,9 +4,12 @@ import Home from "./pages/Home";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import Layout from "./layout";
+import DetailPage from "./pages/Detail/DetailPage";
+import AccountPage from "./pages/Account/AccountPage";
 import Cart from "./pages/Cart";
 import NotFound from "./pages/notFound";
 import Wishlist from "./pages/wishlist";
+import Checkout from "./pages/checkout";
 
 function App() {
   return (
@@ -19,6 +22,10 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/detail" element={<DetailPage />} />
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Route>
       </Routes>
     </>

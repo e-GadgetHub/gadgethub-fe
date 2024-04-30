@@ -93,7 +93,7 @@ const Component: React.FC = () => {
                                 w={"100%"}
                                 color={"white"}
                                 bg={"#DB4444"}
-                                _hover={"none"}
+                                _hover={{ bg: "black", color: "white" }}
                                 onClick={handleSubmit(onSubmit)}
                             >
                                 Create Account

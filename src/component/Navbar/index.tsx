@@ -66,10 +66,10 @@ export const Navbar = () => {
           alignItems={"center"}
         >
           <Link to={"/"}>
-            <Text>Home</Text>
+            <Text>Leptop</Text>
           </Link>
-          <Text>Contact</Text>
-          <Text>About</Text>
+          <Text>Smartphone</Text>
+          <Text>Accessories</Text>
           <InputGroup bg={"white"} w={"50%"}>
             <InputLeftElement>
               <FaSearch />

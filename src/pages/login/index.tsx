@@ -87,7 +87,7 @@ const Component: React.FC = () => {
               alignItems={"center"}
               my={"45px"}
             >
-              <Button w={"30%"} color={"white"} bg={"#DB4444"} _hover={"none"} onClick={handleSubmit(onSubmit)}>
+              <Button w={"30%"} color={"white"} bg={"#DB4444"} _hover={{ bg: "black", color: "white" }} onClick={handleSubmit(onSubmit)}>
                 Login
                 {loading && <Spinner/>}
               </Button>
