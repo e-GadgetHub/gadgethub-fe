@@ -5,7 +5,7 @@ import { TfiHeadphoneAlt } from "react-icons/tfi";
 
 export const Superiority = () => {
   return (
-    <Box display={"flex"} justifyContent={"center"} alignItems={"center"} gap={"30px"} h={"300px"} my={"70px"}>
+    <Box display={"flex"} justifyContent={"center"} alignItems={"center"} gap={"100px"} h={"300px"} my={"70px"}>
       <Box w={"222px"} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}>
         <Box bg={"#C1C0C1"} p={"10px"} rounded={"100%"}>
           <Box bg={"black"} rounded={"100%"} p={"10px"}>

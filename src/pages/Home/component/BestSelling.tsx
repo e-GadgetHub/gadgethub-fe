@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { CardBestSelling } from "./CardBestSelling";
 import { IBestSell } from "../../../type";
@@ -12,9 +12,12 @@ export const BestSelling = () => {
 
   return (
     <Box py={"15px"} my={"20px"}>
-      <Text fontSize={"20px"} fontWeight={"bold"}>
-        Best Sellings
-      </Text>
+      <Flex w={"100%"} mt={"10px"}>
+        <Box bg={"#db4444"} w={"18px"} h={"35px"} borderRadius={3} me={3}></Box>
+        <Text fontWeight={"bold"} fontSize={"20px"} mt={"3px"}>
+          Best Selling
+        </Text>
+      </Flex>
 
       <Box display={"flex"}>
         {data.map((item, index) => (

@@ -21,7 +21,6 @@ import { CardBestSelling } from "../Home/component/CardBestSelling";
 import React from "react";
 import domy from "../../mock/databestselling.json";
 import { IBestSell } from "../../type";
-import { TbRectangleVerticalFilled } from "react-icons/tb";
 
 const DetailPage = () => {
   const [data, setData] = React.useState<IBestSell[]>([]);
@@ -70,12 +69,7 @@ const DetailPage = () => {
         </GridItem>
         <GridItem colSpan={5}>
           <Box>
-            <Image
-              w="100%"
-              h="100%"
-              src="https://bit.ly/dan-abramov"
-              alt="Dan Abramov"
-            />
+            <Image w="100%" h="100%" src="https://bit.ly/dan-abramov" alt="Dan Abramov" />
           </Box>
         </GridItem>
         <GridItem colSpan={4} ml={5}>
@@ -87,10 +81,9 @@ const DetailPage = () => {
             <Text>Rp 160.000</Text>
             <Box borderBottom="1px" borderColor={"gray"} py={6}>
               <Text align={"justify"}>
-                Deskripsi, Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Nisi amet minima veniam, facilis aperiam sapiente,
-                consequatur et, ut optio labore esse atque voluptas. Impedit
-                iure aliquam ab magni numquam quis!
+                Deskripsi, Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi amet minima veniam, facilis
+                aperiam sapiente, consequatur et, ut optio labore esse atque voluptas. Impedit iure aliquam ab magni
+                numquam quis!
               </Text>
             </Box>
             <HStack py={6}>
@@ -150,12 +143,7 @@ const DetailPage = () => {
               <Button colorScheme="red" w={52}>
                 Buy Now
               </Button>
-              <IconButton
-                variant="outline"
-                colorScheme="black"
-                aria-label="Send email"
-                icon={<FaRegHeart />}
-              />
+              <IconButton variant="outline" colorScheme="black" aria-label="Send email" icon={<FaRegHeart />} />
             </HStack>
             <Box w="100%" border="1px black solid" p={6}>
               <HStack>
@@ -164,9 +152,7 @@ const DetailPage = () => {
                 </Box>
                 <Flex direction={"column"} w="100%">
                   <Text fontWeight={"bold"}>Free Delivery</Text>
-                  <Text fontSize={12}>
-                    enter your postal code for delivery availability
-                  </Text>
+                  <Text fontSize={12}>enter your postal code for delivery availability</Text>
                 </Flex>
               </HStack>
             </Box>
@@ -184,9 +170,11 @@ const DetailPage = () => {
           </Box>
         </GridItem>
       </Grid>
-      <Flex alignItems={"center"} px={24} pt={14}>
-        <TbRectangleVerticalFilled color="red" size="50px" />
-        <Text>Related Item</Text>
+      <Flex w={"100%"} mt={"10px"}>
+        <Box bg={"#db4444"} w={"18px"} h={"35px"} borderRadius={3} me={3}></Box>
+        <Text fontWeight={"bold"} fontSize={"20px"} mt={"3px"}>
+          Related Items
+        </Text>
       </Flex>
       <Flex px={24} pb={24}>
         {data.map((item, index) => (

@@ -1,14 +1,15 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 export const NewAririval = () => {
   return (
     <>
-      <Box w={"100%"} mt={"10px"}>
-        <Text fontWeight={"bold"} fontSize={"20px"}>
+      <Flex w={"100%"} mt={"10px"}>
+        <Box bg={"#db4444"} w={"18px"} h={"35px"} borderRadius={3} me={3}></Box>
+        <Text fontWeight={"bold"} fontSize={"20px"} mt={"3px"}>
           New Arrival
         </Text>
-      </Box>
+      </Flex>
       <Box display={"flex"} minH={"600px"} gap={"20px"} mb={"10px"} mx={"10px"}>
         <Box
           boxShadow={"2xl"}
