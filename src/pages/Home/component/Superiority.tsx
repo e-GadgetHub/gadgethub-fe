@@ -1,5 +1,4 @@
 import { Box, Text } from "@chakra-ui/react";
-import React from "react";
 import { IoShieldCheckmark } from "react-icons/io5";
 import { TbTruckDelivery } from "react-icons/tb";
 import { TfiHeadphoneAlt } from "react-icons/tfi";

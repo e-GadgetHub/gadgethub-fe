@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { BestSelling } from "./component/BestSelling";
 import { NewAririval } from "./component/NewAririval";
 import { Superiority } from "./component/Superiority";
