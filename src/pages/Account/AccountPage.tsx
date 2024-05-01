@@ -6,14 +6,12 @@ import {
   FormLabel,
   Grid,
   GridItem,
-  Heading,
   Input,
   Link,
   ListItem,
   Stack,
   Text,
   UnorderedList,
-  VStack,
 } from "@chakra-ui/react";
 
 const AccountPage = () => {
@@ -54,7 +52,7 @@ const AccountPage = () => {
                   <Link>My Cancellations</Link>
                 </ListItem>
               </UnorderedList>
-              <Text fontWeight={"bold"}>My Whislist</Text>
+              <Text fontWeight={"bold"}>My Wishlist</Text>
             </Stack>
           </GridItem>
           <GridItem colSpan={6}>
