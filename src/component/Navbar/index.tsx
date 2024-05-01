@@ -28,7 +28,7 @@ export const Navbar = () => {
       h={"75px"}
       justifyContent={"center"}
       alignItems={"center"}
-      borderBottom={"1px solid"}
+      borderBottom={"1px solid #bdbdbd"}
       bg={"white"}
       position={isSticky ? "fixed" : "static"}
       w={"100%"}
@@ -43,9 +43,7 @@ export const Navbar = () => {
         </Box>
 
         <Box display={"flex"} w={"60%"} gap={"25px"} justifyContent={"center"} alignItems={"center"}>
-          <Link to={"/"}>
-            <Text>Laptop</Text>
-          </Link>
+          <Text>Laptop</Text>
           <Text>Smartphone</Text>
           <Text>Accessories</Text>
           <InputGroup bg={"white"} w={"50%"}>
