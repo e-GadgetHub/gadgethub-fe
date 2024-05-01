@@ -8,11 +8,7 @@ export const Promo = () => {
   return (
     <Swiper
       style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
         width: "100%",
-        height: "auto",
       }}
       modules={[Navigation, Pagination, Autoplay]}
       spaceBetween={50}
@@ -26,21 +22,24 @@ export const Promo = () => {
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      
       {data.map((item, index) => (
-        <SwiperSlide key={index} style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <SwiperSlide
+          key={index}
+          style={{ height: "450px", display: "flex", justifyContent: "center", alignItems: "center" }}
+        >
           <Box
             display={"flex"}
             bgImage={"../../../../src/assets/image/BGCARD.jpeg"}
             backgroundSize={"cover"}
-            w={"85%"}
+            w={"100%"}
+            h={"90%"}
             rounded={"10px"}
-            m={"20px"}  
+            mt={"40px"}
             justifyContent={"space-between"}
             alignItems={"center"}
             textAlign={"center"}
           >
-            <Box textAlign={'start'} p={"100px"} color={"white"}>
+            <Box textAlign={"start"} p={"100px"} color={"white"}>
               <Text fontSize={"35px"} fontWeight={"bold"}>
                 {item?.name}
               </Text>
