@@ -7,29 +7,14 @@ import React from "react";
 
 const Component: React.FC = () => {
   return (
-    <Box
-      w={"100%"}
-      display={"grid"}
-      justifyItems={"center"}
-      gap={"10px"}
-    >
-      
-        <Promo />
+    <Box w={"100%"} display={"grid"} justifyItems={"center"} gap={"30px"}>
+      <Promo />
 
-      <Box w={"85%"} my={"20px"}>
-        <BestSelling />
-      </Box>
+      <BestSelling />
 
-      <Box w={"85%"} minH={"600px"} my={"10px"}>
-        <Text fontWeight={"bold"} fontSize={"20px"}>
-          New Arrival
-        </Text>
-        <NewAririval />
-      </Box>
+      <NewAririval />
 
-      <Box w={"85%"} my={"70px"}>
-        <Superiority />
-      </Box>
+      <Superiority />
     </Box>
   );
 };

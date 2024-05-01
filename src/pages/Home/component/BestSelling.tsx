@@ -11,7 +11,7 @@ export const BestSelling = () => {
   }, []);
 
   return (
-    <Box py={"15px"}>
+    <Box py={"15px"} my={"20px"}>
       <Text fontSize={"20px"} fontWeight={"bold"}>
         Best Sellings
       </Text>
