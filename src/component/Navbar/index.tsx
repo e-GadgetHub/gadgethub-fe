@@ -1,11 +1,4 @@
-import {
-  Box,
-  Image,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Image, Input, InputGroup, InputLeftElement, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -42,31 +35,16 @@ export const Navbar = () => {
       zIndex={9999}
       overflow={"hidden"}
     >
-      <Box
-        w={"90%"}
-        display={"flex"}
-        justifyContent={"space-between"}
-        h={"100%"}
-      >
+      <Box w={"90%"} display={"flex"} justifyContent={"space-between"} h={"100%"}>
         <Box w={"20%"}>
           <Link to={"/"}>
-            <Image
-              w={"100%"}
-              mt={"-1rem"}
-              src="../../../src/assets/image/logo_e.comerce.png"
-            />
+            <Image w={"100%"} mt={"-1rem"} src="../../../src/assets/image/logo_e.comerce.png" />
           </Link>
         </Box>
 
-        <Box
-          display={"flex"}
-          w={"60%"}
-          gap={"25px"}
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
+        <Box display={"flex"} w={"60%"} gap={"25px"} justifyContent={"center"} alignItems={"center"}>
           <Link to={"/"}>
-            <Text>Leptop</Text>
+            <Text>Laptop</Text>
           </Link>
           <Text>Smartphone</Text>
           <Text>Accessories</Text>
@@ -77,13 +55,7 @@ export const Navbar = () => {
             <Input type="text"></Input>
           </InputGroup>
         </Box>
-        <Box
-          display={"flex"}
-          w={"20%"}
-          justifyContent={"center"}
-          alignItems={"center"}
-          gap={5}
-        >
+        <Box display={"flex"} w={"20%"} justifyContent={"center"} alignItems={"center"} gap={5}>
           <Link to={"/cart"}>
             <FaShoppingCart size={30} />
           </Link>
